@@ -134,3 +134,7 @@ EMAIL_HOST_PASSWORD = 'eyce jngs haxv fmht'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_PORT = 587
+
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
