@@ -6,5 +6,9 @@ Home
 
 
 {% block body %}
+      {% if user.is_authenticated %}
+      <h1>Welcome to Home page mr/ ms {{user.username}}</h1>
+      {% else %}
       <h1>Welcome to Home Page</h1>
+      {% endif %}
     {% endblock body %}

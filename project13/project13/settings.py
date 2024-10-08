@@ -134,3 +134,11 @@ EMAIL_HOST_PASSWORD = 'eyce jngs haxv fmht'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_PORT = 587
+
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+SESSION_COOKIE_AGE = 2000
+SESSION_EXPIER_AT_BROWSER_CLOSE = True
