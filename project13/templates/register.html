@@ -8,9 +8,10 @@ Register
 {% block body %}
       <h1>Welcome to Registration Page</h1>
       <center>
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             {{EUFO.as_p}}
+            {{EPFO.as_p}}
             <input type="submit" value="Register">
         </form>
       </center>

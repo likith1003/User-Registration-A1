@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}
+display_profile
+{% endblock title %}
+
+{% block body %}
+<style>
+    img{
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+    }
+    img:hover{
+        transform: rotate(180deg);
+        transition: 2s;
+        transform: scale(1.25);
+    }
+    h1:hover{
+        transform: rotate(360deg);
+        transition: 20s;
+    }
+</style>
+<h1>Welcome to display_profile page</h1>
+<center>
+    <img src="{{po.profil_pic.url}}" alt=""  ">
+    <h1>First name: {{user.first_name}}</h1>
+    <h1>Last Name: {{user.last_name}}</h1>
+    <h1>Username: {{user.username}}</h1>
+    <h1>Email: {{user.email}}</h1>
+    <h1>Phone Number: {{po.pno}}</h1>
+</center>
+{% endblock body %}
