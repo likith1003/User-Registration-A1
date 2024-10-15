@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}
+New Password
+{% endblock title %}
+
+{% block body %}
+  <center>
+    <h1>Welcome to Change Password Page</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="pw">Password</label>
+        <input type="text" name="pw" id="pw"> <br> <br>
+        <label for="cpw">Confirm Password</label>
+        <input type="text" name="cpw" id="cpw"> <br> <br>
+        <input type="submit" value="Change Password">
+
+    </form>
+  </center>
+{% endblock body %}

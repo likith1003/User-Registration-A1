@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+otp
+{% endblock title %}
+
+{% block body %}
+<form method="post">
+    {% csrf_token %}
+    <label for="otp">Enter OTP</label>
+    <input type="text" name="otp" id="otp"> <br> <br>
+    <input type="submit" value="Verify OTP">
+</form>
+{% endblock body %}
